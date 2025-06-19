@@ -1,32 +1,24 @@
-const {
-  bot,
-  yts,
-  song,
-  video,
-  addAudioMetaData,
-  // genListMessage,
-  generateList,
-} = require('../lib/')
+const { bot, yts, song, video, addAudioMetaData, generateList, lang } = require('../lib/')
 const ytIdRegex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/
 
 bot(
   {
     pattern: 'yts ?(.*)',
-    desc: 'YT search',
+    desc: lang.plugins.yts.desc,
     type: 'search',
   },
   async (message, match) => {
-    if (!match) return await message.send('*Example : yts baymax*')
+    if (!match) return await message.send(lang.plugins.yts.usage)
     const vid = ytIdRegex.exec(match)
     if (vid) {
-      const result = await yts(vid[1], true)
+      const result = await yts(vid[1], true, null, message.id)
       const { title, description, duration, view, published } = result[0]
       return await message.send(
         `*Title :* ${title}\n*Time :* ${duration}\n*Views :* ${view}\n*Publish :* ${published}\n*Desc :* ${description}`
       )
     }
-    const result = await yts(match)
+    const result = await yts(match, false, null, message.id)
     const msg = result
       .map(
         ({ title, id, view, duration, published, author }) =>
@@ -41,17 +33,17 @@ bot(
 bot(
   {
     pattern: 'song ?(.*)',
-    desc: 'download yt song',
+    desc: lang.plugins.song.desc,
     type: 'download',
   },
   async (message, match) => {
     match = match || message.reply_message.text
-    if (!match) return await message.send('*Example : song indila love story/ yt link*')
+    if (!match) return await message.send(lang.plugins.song.usage)
     const vid = ytIdRegex.exec(match)
     if (vid) {
-      const _song = await song(vid[1])
-      if (!_song) return await message.send('*not found*')
-      const [result] = await yts(vid[1], true)
+      const _song = await song(vid[1], message.id)
+      if (!_song) return await message.send(lang.plugins.song.not_found)
+      const [result] = await yts(vid[1], true, null, message.id)
       const { author, title, thumbnail } = result
       const meta = title ? await addAudioMetaData(_song, title, author, '', thumbnail.url) : _song
       return await message.send(
@@ -60,7 +52,7 @@ bot(
         'audio'
       )
     }
-    const result = await yts(match, 0, 1)
+    const result = await yts(match, 0, 1, message.id)
     if (!result.length) return await message.send(`_Not result for_ *${match}*`)
     const msg = generateList(
       result.map(({ title, id, duration, author, album }) => ({
@@ -74,35 +66,22 @@ bot(
       message.id
     )
     return await message.send(msg.message, { quoted: message.data }, msg.type)
-    // return await message.send(
-    // 	genListMessage(
-    // 		result.map(({ title, id, duration }) => ({
-    // 			text: title,
-    // 			id: `song https://www.youtube.com/watch?v=${id}`,
-    // 			desc: duration,
-    // 		})),
-    // 		`Searched ${match}\nFound ${result.length} results`,
-    // 		'DOWNLOAD'
-    // 	),
-    // 	{},
-    // 	'list'
-    // )
   }
 )
 
 bot(
   {
     pattern: 'video ?(.*)',
-    desc: 'download yt video',
+    desc: lang.plugins.video.desc,
     type: 'download',
   },
   async (message, match) => {
     match = match || message.reply_message.text
-    if (!match) return await message.send('*Example : video yt_url*')
+    if (!match) return await message.send(lang.plugins.video.usage)
     const vid = ytIdRegex.exec(match)
     if (!vid) {
-      const result = await yts(match)
-      if (!result.length) return await message.send(`_Not result for_ *${match}*`)
+      const result = await yts(match, false, null, message.id)
+      if (!result.length) return await message.send(lang.plugins.video.not_found)
       const msg = generateList(
         result.map(({ title, id, duration, view }) => ({
           text: `${title}\nduration : ${duration}\nviews : ${view}\n`,
@@ -116,7 +95,7 @@ bot(
       return await message.send(msg.message, { quoted: message.data }, msg.type)
     }
     return await message.send(
-      await video(vid[1]),
+      await video(vid[1], message.id),
       { quoted: message.data, fileName: `${vid[1]}.mp4` },
       'video'
     )
