@@ -1,37 +1,91 @@
 {
   "extra": {
-    "init_session": "[{0}] Nai session shuru ho rahe hai",
-    "load_session": "[{0}] session check ki ja rahi hai",
-    "invalid_session": "[{0}] {1} PHIR SE SCAN KARAIN!!!",
-    "success_session": "[{0}] Session safalta se validated hogaya hai.",
-    "connecting": "[{0}] Connecting...",
-    "connected": "[{0}] Connected ✅ {1}",
-    "instance_close": "[{0}] Connection band 🚫",
-    "instance_restart": "[{0}] Instance phir start horha...`",
-    "reconnect": "[{0}] Dobara connect horha...({1})",
-    "reconnect_after": "[{0}] Ik mint ky baad dobara start hoga",
-    "another_login": "[{0}] Ye session kisi doosray device par login hai.",
-    "error_message": "```---ERROR REPORT---\n\nVersion : {0}\nMessage : {1}\nError   : {2}\nJid     : {3}\ncommand : {4}\nPlatform : {5}```\n\n```-----``` *Made by LyFE with ❣* ```-----```",
-    "deleted_message": "           deletedMessage",
-    "install_external_plugin": "[{0}] Installing External plugins...",
-    "installed_external_plugin": "[{0}] External Plugins Install ho rhe",
-    "plugin_install": "[{0}] Installing Plugins...",
-    "plugin_installed": "[{0}] Installed ✅ {1}",
-    "plugins_installed": "[{0}] Plugins Installed ✅",
-    "plugin_install_error": "[{0}] Error installing {1}, deleting plugin",
-    "plugin_not_found": "[{0}] plugin {1} not found (404), deleting plugin",
-    "group_cmd": "_ye command sirf group ky liye hai_"
+    "init_session": "[{0}] Nai session set up kar raha hoon... 🚀",
+    "load_session": "[{0}] Session data download kar raha hoon... 📥",
+    "invalid_session": "[{0}] {1} Session ID ghalat hai, dobara scan karein! 📸",
+    "success_session": "[{0}] Session validate ho gaya, ready! ✅",
+    "connecting": "[{0}] Connect ho raha hoon... 📡",
+    "connected": "[{0}] Connected, help ke liye ready! ⚡ {1}",
+    "instance_close": "[{0}] Connection band ho gaya. 👋",
+    "instance_restart": "[{0}] Instance restart ho raha hai... 🔄",
+    "reconnect": "[{0}] Dobara connect kar raha hoon... ({1}) 🔄",
+    "reconnect_after": "[{0}] Ek minute baad dobara try karunga. ☕",
+    "another_login": "[{0}] Ye session kisi doosray device par login hai. 🤨",
+    "error_message": "```--- ⚠️ ERROR REPORT ⚠️ ---\n\nVersion  : {0}\nMessage  : {1}\nError    : {2}\nJid      : {3}\nCommand  : {4}\nPlatform : {5}```\n\n```-----``` *Made by LyFE with ❣* ```-----```",
+    "deleted_message": "🗑️ Delete kiya gaya message",
+    "edited_message": "✏️ Edit kiya gaya message #{0}",
+    "install_external_plugin": "[{0}] External plugins install kar raha hoon... 📦",
+    "installed_external_plugin": "[{0}] External plugins install ho gaye! 🎒",
+    "plugin_install": "[{0}] Plugins install kar raha hoon... 📚",
+    "plugin_installed": "[{0}] {1} install ho gaya! ✅",
+    "plugins_installed": "[{0}] Sab plugins ready hain! 🎓",
+    "plugin_install_error": "[{0}] {1} install karne mein error, delete kar raha hoon. 🗑️",
+    "plugin_not_found": "[{0}] Plugin {1} nahi mila (404), delete kar raha hoon. 🔍",
+    "group_cmd": "Ye command sirf group chats ke liye hai. 👨‍👩‍👧‍👦",
+    "labels": {
+      "sudo": "🛡️ SUDO",
+      "auto_read": "📖 AUTO READ MSG",
+      "auto_status": "👀 AUTO STATUS VIEW",
+      "auto_reject": "🚫 AUTO REJECT CALL",
+      "always_online": "🔋 ALWAYS ONLINE",
+      "anti_delete": "🛡️ ANTI DELETE MSG",
+      "auto_update": "🔄 AUTO UPDATE BOT"
+    },
+    "promoted": "ne promote kiya",
+    "demoted": "ne demote kiya",
+    "file_size_error": "File ka size bohot bara hai! 📂\nSize: {0}\n\n{1}",
+    "missing_jid": "JIDs missing hain. 🗺️",
+    "no_contacts": "Contacts nahi mile, pehle add karein. 👥",
+    "reaction_not_enabled": "Is channel par reactions disabled hain.",
+    "reaction_not_allowed": "Yeh reaction is channel par allowed nahi hai.",
+    "metadata_fetch_failed": "Metadata fetch nahi ho saka. 🧩",
+    "lang_not_supported": "' {0} ' zuban support nahi hai, default par switch kar raha hoon. 🌐",
+    "screenshot_error": "Screenshot lene mein error. 📸❌",
+    "id_missing": "ID missing hai. 🕵️",
+    "not_on_whatsapp": "{0} WhatsApp par nahi hai. 👻",
+    "yt_auth_required": "Download nakam: YouTube authentication maangta hai. 🗝️\n\n*Solutions:*\n1. *Google Auth:* Apna Google account link karne ke liye `.gauth auth` use karein.\n2. *YT_COOKIE:* `YT_COOKIE` environment variable set karein.\nWiki: https://github.com/lyfe00011/levanter/wiki/yt%E2%80%90cookie\n\n*Error:* {0}"
   },
   "plugins": {
     "common": {
-      "reply_to_message": "_message ka reply dain_",
-      "not_admin": "_main admin nahi hoon !!_",
       "reply_to_image": "_photo ka reply dain_",
-      "update": "_Settings update hogai hai ✅_"
+      "reply_to_message": "_paigham ka reply dain_",
+      "not_admin": "_Main admin nahi hoon._",
+      "not_found": "_Nahi mila._",
+      "update": "_Settings update hogai hai ✅_",
+      "spotify_download_failed": "Spotify track download nahi ho saka",
+      "spotify_playlist_failed": "Spotify playlist nahi mil saki",
+      "truecaller_login_prompt": "Aap login nahi hain.\n\nTruecaller mein login karne ke liye apna number bhejein.\n\nExample : truecaller your_number",
+      "truecaller_sent": "Code aapke number par bhej diya gaya hai\n\nExample : truecaller 653084",
+      "truecaller_invalid_number": "Number ghalat hai",
+      "truecaller_invalid_code": "Code ghalat hai",
+      "truecaller_invalid_mobile": "Mobile number ghalat hai",
+      "group_not_found": "{0} group mein nahi hai. Pehle 3 members: {1}",
+      "import_contacts_first": "Pehle contacts import karein",
+      "video_not_supported": "Is bot mein music engine video downloads support nahi karta.",
+      "audio_disabled": "Music engine download fail ho gaya aur YouTube audio disabled hai.",
+      "gemini_missing_api_key": "GEMINI_API_KEY nahi hai",
+      "gemini_error": "error",
+      "upscale_upload_failed": "Image upload nahi ho saki",
+      "upscale_invalid_response": "Upscale service se invalid response",
+      "upscale_failed": "Image upscale nahi ho saki. Baad mein try karein.",
+      "invalid_file_type": "Error: {0}-file process nahi ho sakti",
+      "upload_failed": "File upload error: {0}",
+      "yt_login_prompt": "Apne YouTube account mein login karein ya YT_COOKIE set karein.\n\nYahan login karein => https://levanter-plugins.vercel.app/yt\n",
+      "yt_cookie_needed": "YT Cookie set karein\nhttps://t.me/c/2479057503/378/2550",
+      "yt_not_found": "{0} nahi mila",
+      "time_day": " din ",
+      "time_days": " din ",
+      "time_hour": " ghanta ",
+      "time_hours": " ghante ",
+      "time_minute": " minute ",
+      "time_minutes": " minute ",
+      "time_second": " second",
+      "time_seconds": " seconds"
     },
     "menu": {
-      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Prefix : {0}\n│ User : {1}\n│ Time : {2}\n│ Day : {3}\n│ Date : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ Ram : {7}\n│ Uptime : {8}\n│ Platform : {9}\n╰────────────────```",
-      "menu": "```╭═══ LEVANTER ═══⊷\n┃❃╭──────────────\n┃❃│ Prefix : {0}\n┃❃│ User : {1}\n┃❃│ Time : {2}\n┃❃│ Day : {3}\n┃❃│ Date : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ Ram : {7}\n┃❃│ Uptime : {8}\n┃❃│ Platform : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
+      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Prefix : {0}\n│ User : {1}\n│ Waqt : {2}\n│ Din : {3}\n│ Tareekh : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ Ram : {7}\n│ Uptime : {8}\n│ Platform : {9}\n╰────────────────```",
+      "menu": "```╭═══ LEVANTER ═══⊷\n┃❃╭──────────────\n┃❃│ Prefix : {0}\n┃❃│ User : {1}\n┃❃│ Waqt : {2}\n┃❃│ Din : {3}\n┃❃│ Tareekh : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ Ram : {7}\n┃❃│ Uptime : {8}\n┃❃│ Platform : {9}\n┃❃╰───────────────\n╰═════════════════⊷```",
+      "disabled": "ghair fa'al"
     },
     "afk": {
       "example": "> *AFK Ka Istmal:*\n- Set AFK: *afk [reason]*\n- Example: *afk main busy hoon* Last seen #lastseen ago\n- Message bhejne se AFK status automatically hat jata hai\n- hatain AFK: *afk off*",
@@ -59,8 +113,8 @@
       "cleared": "*🗑️ Antifake list cleared and disabled*",
       "whitelist_mode": "🟢 Whitelist Mode (Allow Only)",
       "blacklist_mode": "🔴 Blacklist Mode (Block Only)",
-      "enabled": "enabled",
-      "disabled": "disabled"
+      "enabled": "فعال",
+      "disabled": "غیر فعال"
     },
     "antilink": {
       "desc": "_Anti-link enable ya configure karain_",
@@ -71,13 +125,33 @@
       "action_invalid": "*Galat action specify kiya gaya hai*",
       "action_update": "Antilink action updated to: *{0}*",
       "update": "> Antilink Updated\n*Allowed:* {0}\n*jo allowed nahi hain:* {1}",
-      "example": "Antilink Status: *{0}*\n\n> Usage Examples:\n- antilink list - dekahin current settings\n- antilink allow whatsapp.com - Allow specific URLs\n- antilink disallow facebook.com - Disallow specific URLs\n- antilink clear allow - Clear allowed URLs\n- antilink clear disallow - Clear disallowed URLs\n- antilink on | off - Enable/Disable antilink\n- antilink kick | warn | null - action set karain link ky liye"
+      "enabled": "فعال",
+      "disabled": "غیر فعال",
+      "example": "Antilink Status: *{0}*\n\n> Usage Examples:\n- antilink list - dekahin current settings\n- antilink allow whatsapp.com - Allow specific URLs\n- antilink disallow facebook.com - Disallow specific URLs\n- antilink clear allow - Clear allowed URLs\n- antilink clear disallow - Clear disallowed URLs\n- antilink on | off - Enable/Disable antilink\n- antilink kick | warn | null - action set karain link ky liye",
+      "allow_prompt": "*Kripya allow karne ke liye ek URL dain.*",
+      "no_new_urls": "*Koi naye URLs add karne ke liye nahi hain.* Saare URLs pehle se list mein hain.",
+      "urls_updated": "*Allowed URLs update ho gaye*\n\nAdded: {0}\nTotal: {1} URL(s)\n\n_Note: URLs case-insensitive hain_",
+      "disallow_prompt": "*Kripya disallow karne ke liye ek URL dain.*",
+      "no_disallowed_urls": "*Koi naye URLs disallow karne ke liye nahi hain.* Saare URLs pehle se disallowed hain.",
+      "disallowed_updated": "*Disallowed URLs update ho gaye*\n\nBlocklist mein add kiya gaya: {0}\nTotal blocked: {1} URL(s)\n\n_Note: URLs case-insensitive hain_",
+      "settings_cleared": "*Antilink settings saaf ho gayi hain.*",
+      "allowed_cleared": "*Allowed URLs saaf ho gaye hain.*",
+      "disallowed_cleared": "*Disallowed URLs saaf ho gaye hain.*"
     },
     "antiword": {
       "desc": "*Group chat mein kuch khaas alfaaz ko filter karain.*",
       "example": "AntiWord Status: {0}\n> *Usage Examples:*\n- antiword kick | warn | null - Violations ke liye action set karo\n- antiword on | off - Enable/Disable word filtering\n- antiword add word1,word2 - Block list mein alfaaz shamil karein\n- antiword remove word1,word2 - Block list se alfaaz hatayein\n- antiword list - Blocked alfaaz dekhein",
       "action_update": "*AntiWord update kar diya gaya hai*: *{0}*",
-      "status": "*AntiWord ab hai* *{0}*."
+      "status": "*AntiWord ab hai* *{0}*.",
+      "add_prompt": "*براہ کرم شامل کرنے کے لیے الفاظ فراہم کریں۔*",
+      "added": "*الفاظ شامل کر دیے گئے ہیں:*\n{0}",
+      "remove_prompt": "*براہ کرم ہٹانے کے لیے الفاظ فراہم کریں۔*",
+      "removed": "*الفاظ ہٹا دیے گئے ہیں:*\n{0}",
+      "activated": "متحرک",
+      "deactivated": "غیر متحرک",
+      "no_words": "*کوئی الفاظ سیٹ نہیں کیے گئے ہیں۔*",
+      "info": "*AntiWord Status:* {0}\n*Action:* {1}\n\n*الفاظ:* {2}",
+      "cleared": "*AntiWord لسٹ صاف کر دی گئی ہے۔*"
     },
     "apk": {
       "desc": "_APKMirror se APK download karo._",
@@ -87,19 +161,23 @@
     },
     "delete": {
       "desc": "Anti-delete: *_Deleted messages recover karain_*",
-      "example": "> *istamal Examples:*\n- delete p - Deleted messages ko aapki chat mein bhejo/sudo\n- delete g - Deleted messages ko aapky usy group main aayenge\n- delete off - Disable anti-delete\n- delete <jid> - Deleted messages apky diye how JID pe aayenge",
+      "example": "> *Usage Examples:*\n- delete g - Send deleted msgs in same chat\n- delete p - Send deleted msgs to sudo\n- delete g pm - Same chat, PMs only\n- delete g gm - Same chat, groups only\n- delete p no-gm - To sudo, exclude groups\n- delete p no-pm - To sudo, exclude PMs\n- delete <jid> - Send to specific JID\n- delete off - Disable\n\n*Scopes:* pm, gm, no-pm, no-gm",
       "invalid_jid": "*Error:* _Invalid JID_",
-      "dlt_msg_jid": " *_Deleted messages bheje jayenge: {0}_*",
       "dlt_msg_disable": "*_Anti-delete disable kar diya gaya hai._*",
-      "dlt_msg_sudo": "*_Deleted messages aapki chat ya sudo mein bheje jayenge._*",
-      "dlt_msg_chat": "*_Deleted messages chat mein hi bheje jayenge_*"
+      "dlt_dest_jid": "*_Deleted messages bheje jayenge: {0}_*",
+      "dlt_dest_sudo": "*_Deleted messages aapki chat ya sudo mein bheje jayenge._*",
+      "dlt_dest_chat": "*_Deleted messages chat mein hi bheje jayenge_*",
+      "dlt_scope_pm": "📌 _Only for personal chats_",
+      "dlt_scope_gm": "📌 _Only for group chats_",
+      "dlt_scope_no_pm": "📌 _Excluding personal chats_",
+      "dlt_scope_no_gm": "📌 _Excluding group chats_"
     },
     "dlt": {
       "desc": "_Replied messages delete kar diye gaye!_"
     },
     "fb": {
       "desc": "_Download karain Facebook ki video_",
-      "example": "",
+      "example": "*Misal:* fb https://www.facebook.com/...",
       "quality": "_Video quality choose karain_",
       "invalid": "*Error:* _Koi video nahi mili di gayi URL ke liye_"
     },
@@ -111,7 +189,7 @@
     "stop": {
       "desc": "_Chat mein filters delete karain._",
       "example": "> *Usage:*\n- stop <filter>\n- stop hey",
-      "delete": "{0} deleted",
+      "delete": "{0} delete kar diya gaya",
       "not_found": "_{0} Filters mein nahi mila._"
     },
     "filter": {
@@ -137,13 +215,13 @@
     "gstop": {
       "desc": "_sary groups mein gfilters delete karein._",
       "example": "> *Usage:*\n- gstop <filter>\n- gstop hi",
-      "delete": "{0} deleted",
+      "delete": "{0} delete kar diya gaya",
       "not_found": "_{0} Gfilters mein nahi mila._"
     },
     "pstop": {
       "desc": "*_sary groups mein pfilter delete karein_*",
       "example": "> *Usage:*\n- pstop <filter>\n- pstop hi",
-      "delete": "{0} deleted",
+      "delete": "{0} delete kar diya gaya",
       "not_found": "_{0} Pfilter mein nahi mila._"
     },
     "gfilter": {
@@ -171,13 +249,13 @@
     },
     "greetings": {
       "welcome_desc": "*_New members ko welcome message bhejein ✨_*",
-      "welcome_example": "_Welcome abhi tak hai *{0}*_\n\n> *استعمال کی مثالیں:*\n- welcome ہیلو &mention! &name میں خوش آمدید - پیغام سیٹ کریں\n- welcome on | off - فعال/غیر فعال کریں\n- welcome delete - پیغام حذف کریں\n\n> *پلیس ہولڈرز:*\n- &mention - نئے ممبر کا تذکرہ کریں\n- &name - گروپ کا نام\n- &desc -  کی تفصیل\n- &size - ممبروں کی تعداد\n- &pp - ممبر کی پروفائل تصویر\n\n> *میڈیا:* تصویر/ویڈیو کا جواب دیں یا پیغام میں URL شامل کریں\n\nمزید تفصیلات: https://levanter-delta.vercel.app/",
+      "welcome_example": "_Welcome abhi tak hai *{0}*_\n\n> *استعمال کی مثالیں:*\n- welcome ہیلو &mention! &name میں خوش آمدید - پیغام سیٹ کریں\n- welcome on | off - فعال/غیر فعال کریں\n- welcome delete - پیغام حذف کریں\n\n> *پلیس ہولڈرز:*\n- &mention - نئے ممبر کا تذکرہ کریں\n- &name - گروپ کا نام\n- &desc -  کی تفصیل\n- &size - ممبروں کی تعداد\n- &pp - ممبر کی پروفائل تصویر\n\n> *میڈیا:* تصویر/ویڈیو کا جواب دیں یا پیغام میں URL شامل کریں\n\nمزید تفصیلات: https://levanter.site/",
       "welcome_enable": "_Welcome abhi on hai_",
       "welcome_disable": "_Welcome abhi off hai_",
       "welcome_delete": "_Welcome message delete kar diya gaya hai_",
       "welcome_not_set": "_پہلے welcome پیغام سیٹ کریں!_\n\n> *مثال:*\nwelcome ہیلو &mention! &name میں خوش آمدید\n\nپھر استعمال کریں: welcome on",
       "goodbye_desc": "*_Members ko goodbye message bhejein._*",
-      "goodbye_example": "*Goodbye abhi tak hai *{0}*\n\n> *استعمال کی مثالیں:*\n- goodbye الوداع &mention! پھر ملیں گے - پیغام سیٹ کریں\n- goodbye on | off - فعال/غیر فعال کریں\n- goodbye delete - پیغام حذف کریں\n\n> *پلیس ہولڈرز:*\n- &mention - رخصت ہونے والے ممبر کا تذکرہ کریں\n- &name - گروپ کا نام\n- &desc - گروپ کی تفصیل\n- &size - ممبروں کی تعداد\n- &pp - ممبر کی پروفائل تصویر\n\n> *میڈیا:* تصویر/ویڈیو کا جواب دیں یا پیغام میں URL شامل کریں\n\nمزید تفصیلات: https://levanter-delta.vercel.app/",
+      "goodbye_example": "*Goodbye abhi tak hai *{0}*\n\n> *استعمال کی مثالیں:*\n- goodbye الوداع &mention! پھر ملیں گے - پیغام سیٹ کریں\n- goodbye on | off - فعال/غیر فعال کریں\n- goodbye delete - پیغام حذف کریں\n\n> *پلیس ہولڈرز:*\n- &mention - رخصت ہونے والے ممبر کا تذکرہ کریں\n- &name - گروپ کا نام\n- &desc - گروپ کی تفصیل\n- &size - ممبروں کی تعداد\n- &pp - ممبر کی پروفائل تصویر\n\n> *میڈیا:* تصویر/ویڈیو کا جواب دیں یا پیغام میں URL شامل کریں\n\nمزید تفصیلات: https://levanter.site/",
       "goodbye_enable": "_Goodbye abhi on hai_",
       "goodbye_disable": "_Goodbye abhi off hai_",
       "goodbye_delete": "_Goodbye message delete kar diya gaya hai_",
@@ -240,16 +318,19 @@
     },
     "group_info": {
       "desc": "_Group invite link ki maloomat dikhaye._",
+      "ginfo_usage": "*Istmaal:* ginfo <group_link>",
       "invalid_link": "_ik valid invite link dain_",
       "details": "*Name:* {0}\n*Group ID:* {1}@g.us\n*Owner:* {2}\n*Members:* {3}\n*Created on:* {4}\n*Description:* {5}"
     },
     "common_members": {
       "desc": "_Do ya zyada groups mein common members ko dikhayein ya kick karein._",
-      "found": "_Koi common members nahi mile._"
+      "found": "0 common members milay hain.",
+      "common_usage": "*Example*\ncommon jid\ncommon jid kick\ncommon jid1 jid2\ncommon jid1,jid2 kick\ncommon jid1 jid2 jid3...jid999\n\ncommon jid1 jid2 jid3 any\nkick - sirf us group se hatane ke liye jispe apne command di hai\nkickall - saare groups se hatane ke liye\nany - do ya zyada common group members include karne ke liye\nskip - saare groups se hatane se bachne ke liye, example skip ek group se bachne ke liye ya skip jid1,jid2,jid3 in groups se bachne ke liye.",
+      "ginfo_usage": "*Example : info group_invte_link*"
     },
     "insta": {
       "usage": "Misal: insta <Instagram URL>",
-      "not_found": "_Nahi Mila._",
+      "not_found": "_Kuch nahi mil saka. ❌_",
       "desc": "_Instagram posts, reels, aur videos download karein._"
     },
     "ison": {
@@ -373,7 +454,7 @@
       "usage": "*Misal:* _mention chalu | band | hasil karein (Kisi paighaam ka jawab dein taake aik khas shakhs ko nishana banaya ja sake.)_",
       "desc": "_Mention ka intizami aur moattali jawab ka nizam banayein_",
       "not_activated": "*_Reply-to mention band hai._*",
-      "current_status": "_Mention hai {0}. Tafseelat ke liye dekhein: https://levanter-delta.vercel.app/_",
+      "current_status": "_Mention hai {0}. Tafseelat ke liye dekhein: https://levanter.site/_",
       "activated": "*_Reply-to mention active kar diya gaya hai._*",
       "deactivated": "_Reply-to mention band kar diya gaya hai_",
       "updated": "*_mention ki settings update kar di gayi hain._*"
@@ -402,7 +483,8 @@
     "msgs": {
       "desc": "_Group ke har member ka message count dikhayein, jin mein fard fard total aur aakhri dafa dekha jana shamil hai._",
       "msg_init": "\n*Number :* {0}\n*Name :* {1}\n*Total Msgs :* {2}\n",
-      "msg_last": "*lastSeen :* {0} ago\n"
+      "msg_last": "*lastSeen :* {0} pehle\n",
+      "no_activity": "Abhi tak koi activity record nahi hui hai."
     },
     "reset": {
       "usage": "*Misal*: _reset karain sary OR reset <reply/mention>_",
@@ -415,6 +497,21 @@
       "desc": "_Ghair fa'aal members ki shanakht ya inhe hataane ke liye. Agar 'kick' likhein, to members hata diye jayenge._",
       "inactives": "_Total ghair fa'aal members hain: {0}_",
       "removing": "_Removing {0} inactive members 7 seconds main remove kiye jainge_"
+    },
+    "weather": {
+      "desc": "Kisi bhi shehar ka mausam check karein",
+      "usage": "*Example : weather delhi*",
+      "not_found": "_{0} daryaft nahi hua ❌_",
+      "report": "*Naam :* {0}\n*Mulk :* {1}\n*Mausam :* {2}\n*Temp :* {3}°\n*Feels Like :* {4}°\n*Humidity :* {5}%\n*Visibility  :* {6}m\n*Hawa* : {7}m/s {8}\n*Sunrise :* {9}\n*Sunset :* {10}"
+    },
+    "y2mate": {
+      "ytv_desc": "YouTube video download karain",
+      "ytv_usage": "_Example: ytv url_",
+      "yta_desc": "YouTube audio download karain",
+      "yta_usage": "_Example: yta darari/yt url_",
+      "invalid_link": "*Aik sahi YouTube link dain!*",
+      "no_video": "*Koi video nahi mili*",
+      "no_audio": "_Audio nahi mila._"
     },
     "amute": {
       "usage": "*Istmaal:* _amute <hour> <min>\n- amute on | off\n- amute info\n\n reply text message ky sath mute message set karain._",
@@ -442,19 +539,32 @@
       "usage": "> Example:\n- zushi ping, sticker\n- Sab commands set karne ke liye ‘list’ type karein aur phir copied message ke sath reply karein (e.g., zushi copied_message)..",
       "desc": "_Ye feature chat mein dusre logon ke liye mukhtalif commands enable karne ki sahulat deta hai_",
       "already_set": "_{0} ye phaly configured hai._",
-      "allowed": "*Ijazat di gayi commands* @{0}\n{1}"
+      "allowed": "*Ijazat di gayi commands* @{0}\n{1}",
+      "no_input": "⚠️ براہ کرم کمانڈ کے نام فراہم کریں\n\n📝 مثالیں:\n  • .zushi song video sticker\n  • .zushi img trt translate\n\n💡 ایک ساتھ کئی کمانڈز شامل کرنے کے لیے اسپیس استعمال کریں",
+      "duplicates": "❌ یہ کمانڈز پہلے ہی اجازت یافتہ ہیں: {0}\n\n📋 موجودہ اجازت یافتہ کمانڈز (کل {1}):\n{2}\n\n💡 تمام اجازت یافتہ کمانڈز دیکھنے کے لیے .yami استعمال کریں\n💡 کمانڈز ہٹانے کے لیے .ope استعمال کریں",
+      "invalid": "⚠️ کوئی درست کمانڈ نہیں ملی\n\nغلط کمانڈز چھوڑ دیں: {0}\n\n💡 دستیاب کمانڈز دیکھنے کے لیے .help استعمال کریں",
+      "error": "❌ غلطی: {0}",
+      "success": "✅ {0} کمانڈ{1} کامیابی کے ساتھ شامل کر دی گئی ہیں:\n{2}\n\n📊 @{3} کے لیے کل اجازت یافتہ: {0} کمانڈ{1}\n\n💡 اب صارفین یہ کمانڈز استعمال کر سکتے ہیں"
     },
     "yami": {
       "usage": "*Istmaal:* _yami_",
       "desc": "_Ye feature is chat mein mojood allowed commands ki list dikhata hai._",
-      "not_set": "_Abhi tak koi bhi allowed commands set nahi hui hain._"
+      "not_set": "_Abhi tak koi bhi allowed commands set nahi hui hain._",
+      "no_commands": "📋 کوئی اجازت یافتہ کمانڈ نہیں ملی\n\n💡 کمانڈز شامل کرنے کے لیے .zushi استعمال کریں\n📝 مثال: .zushi song video sticker",
+      "list": "📋 @{0} کے لیے اجازت یافتہ کمانڈز:\n\n{1}\n\n📊 کل: {2} کمانڈ{3}\n\n💡 ہٹائیں: .ope <کمانڈز کے نام>\n💡 سب ہٹائیں: .ope all"
     },
     "ope": {
       "usage": "*Misaal:* _ope ping, sticker OR ope all_@",
       "desc": "_Ye feature mukhtalif allowed commands ko delete ya unset karne ke liye istemal hota hai._",
       "not_found": "_{0} ke liye koi bhi allowed commands nahi mili_",
       "all_removed": "_Sab allowed commands hata di gayi hain !!_",
-      "removed": "*remove ki gai commands* @{0}\n{1}"
+      "removed": "*remove ki gai commands* @{0}\n{1}",
+      "no_input": "⚠️ براہ کرم ہٹانے کے لیے کمانڈز کے نام فراہم کریں\n\n📝 مثالیں:\n  • .ope song video\n  • .ope all (سب کچھ ہٹا دے گا)\n\n💡 اجازت یافتہ کمانڈز دیکھنے کے لیے .yami استعمال کریں",
+      "not_found_list": "❌ کمانڈ{0} نہیں ملی: {1}{2}\n\n💡 تمام اجازت یافتہ کمانڈز دیکھنے کے لیے .yami استعمال کریں\n📝 مثال: .ope song video",
+      "error": "❌ غلطی: {0}",
+      "no_commands": "⚠️ اس صارف/گروپ کے لیے کوئی کمانڈز نہیں ملیں\n\n💡 پہلے کمانڈز شامل کرنے کے لیے .zushi استعمال کریں",
+      "all_success": "✅ تمام کمانڈز ہٹا دی گئی ہیں\n\n💡 نئی کمانڈز شامل کرنے کے لیے .zushi استعمال کریں",
+      "success": "✅ {0} کمانڈ{1} ہٹا دی گئی ہیں:\n{2}\n\n📊 صارف: @{3}\n\n💡 باقی کمانڈز دیکھنے کے لیے .yami استعمال کریں\n💡 سب کچھ ہٹانے کے لیے .ope all استعمال کریں"
     },
     "pdm": {
       "usage": "*Istmaal:* pdm on | off",
@@ -464,9 +574,9 @@
       "deactivated": "_Promote/demote alert deactivated hai_"
     },
     "ping": {
-      "desc": "_Bot ki response time (latency) check karein_",
-      "ping_sent": "_Ruko zara sabar karo !!_",
-      "pong": "*Pong! Response time: {0} ms*"
+      "desc": "_Bot ki speed check karein_",
+      "ping_sent": "Check kar raha hoon...",
+      "pong": "Zabardast! Speed: {0} ms 💥"
     },
     "pinterest": {
       "usage": "*Istmaal:* _pinterest <Pinterest URL>_",
@@ -483,7 +593,7 @@
     "remove": {
       "usage": "> Misaal:\b- remove <plugin_name>\n- remove all",
       "desc": "_External plugins ko unka naam likh kar delete karein ya sab plugins ek sath remove karein._",
-      "not_found": "Plugin *{0}* nahi mila ❗",
+      "not_found": "Plugin *{0}* daryaft nahi hua ❗",
       "removed": "_Plugins kamiyabi se remove kar diye gaye._"
     },
     "reboot": {
@@ -528,7 +638,8 @@
       "desc": "*_User ya group ka profile picture aur additional maloomat (e.g., about, status) dikhata hai._*"
     },
     "gjid": {
-      "desc": "*Sabhi groups ke JIDs aur unke names ki list dikhata hai.*"
+      "desc": "*Sabhi groups ke JIDs aur unke names ki list dikhata hai.*",
+      "item": "*{0}. {1}*\n{2}\n"
     },
     "qr": {
       "usage": "*Misaal:* *_qr test YA reply karein kisi QR image par qr likh kar_*",
@@ -587,7 +698,7 @@
       "deactivated": "⚠️ *Antispam Protection Disabled*\n\nSpam detection is now OFF",
       "activated": "✅ *Antispam Protection Enabled*\n\nLevel: {level} ({description})\nAction: {action}",
       "level_set": "✅ *Level Changed*\n\nNew level: {level}",
-      "action_set": "✅ *Action Changed*\n\nSpammers will be: {action_desc}\n\n*Current Settings:*\nLevel: {level} | Action: {action}",
+      "action_set": "✅ *Action Changed*\n\nSpammers will be: {action_desc}",
       "invalid_level": "❌ Invalid level. Use: low, medium, high",
       "help": "📖 *Antispam Help*\n\n*Commands:*\n• `antispam on` - Enable (default: medium)\n• `antispam off` - Disable\n• `antispam <low/medium/high>` - Change sensitivity\n• `antispam <warn/delete/kick>` - Change action\n• `antispam info` - View current settings\n\n*Levels:*\n• Low - Relaxed (active groups)\n• Medium - Balanced (recommended)\n• High - Strict (problem groups)",
       "spam_warning": "⚠️ @{mention} Stop spamming!",
@@ -624,17 +735,19 @@
       "desc": "_Group members ko tag karein apni pasand ke mutabiq. 'all' ka use sabhi members ko mention karne ke liye karein, 'admin' sirf group admins ko mention karega, 'notadmin' non-admin members ko mention karega, ya phir ek custom message bhejne ke liye apni message likhein_"
     },
     "tictactoe": {
-      "usage": "*Misaal:* _tictactoe <opponent_jid> YA tictactoe restart <opponent_jid> YA tictactoe end_",
-      "desc": "> TicTacToe game khelein kisi opponent ke against. Kisi user ko challenge karne ke liye unka mention karein, unke message par reply karein, ya unka JID specify karein. 'tictactoe end' game khatam karne ke liye use karein aur 'tictactoe restart <opponent_jid>' naye opponent ke sath game restart karne ke liye.",
+      "usage": "*Misaal:* _tictactoe <opponent_jid> YA tictactoe normal <opponent_jid> YA tictactoe restart <opponent_jid> YA tictactoe end_\nDefault mode infinite hai, normal mode ke liye 'tictactoe normal' use karein.",
+      "desc": "> TicTacToe game khelein kisi opponent ke against. Kisi user ko challenge karne ke liye unka mention karein, unke message par reply karein, ya unka JID specify karein. 'tictactoe end' game khatam karne ke liye use karein aur 'tictactoe restart <opponent_jid>' naye opponent ke sath game restart karne ke liye. Default mode infinite hai, normal mode ke liye 'tictactoe normal' use karein.",
       "choose_opponent": "_Kisi opponent ko choose karein message par reply karke ya user ko mention karke. Aap khud se nahi khel sakte._",
       "game_ended": "_Game khatam._",
       "game_restarted": "_Game naye opponent ke sath restart ho gaya hai._",
       "invalid_input": "_Invalid input. Sahi opponent provide karein ya 'end' aur 'restart' ka sahi tareeke se use karein._",
       "players": "*Players*",
       "already_occupied": "*_Already Occupied_*",
-      "current_player": "*currentPlayer",
+      "current_player": "Current Player",
       "game_finish": "_Game Finish 🏁_",
-      "winner": "_winner 🏆_"
+      "winner": "Winner 🏆",
+      "restart": "Game Restart",
+      "header": "---Tic Tac Toe---"
     },
     "tiktok": {
       "usage": "*Istmaal: _tiktok <TikTok URL> (ya kisi message par reply karein jo URL contain karta ho)_",
@@ -676,7 +789,7 @@
       "usage": "*Misaal:* _delvar sudo_",
       "desc": "_Variable ko delete karein uski key specify karke._",
       "not_found": "*{0} vars me nahi mila.*",
-      "deleted": "_{0} deleted ✅_"
+      "deleted": "_{0} delete kar diya gaya ✅_"
     },
     "setvar": {
       "usage": "*Misaal:* _setvar key = value_",
@@ -696,36 +809,63 @@
       "option_required": "_2 ya zyada options required hain._",
       "question_required": "*question required*",
       "vote": "*_React karein ya option ko reply karein vote dene ke liye._*",
-      "vote_deleted": "_Vote deleted._",
+      "vote_deleted": "_Vote delete kar diya gaya._",
       "voted": "@{0} ne {1} ke liye vote diya\n\n${2}"
     },
     "warn": {
       "usage": "*Misaal:* _warn @user YA warn reset @user. Aap kisi user ke message par reply kar ke bhi 'warn' ya 'warn reset' likh sakte hain._",
       "desc": "*_Group chat me kisi user ko warn karein. Yeh command user ki warning count ko badhati hai. Agar count limit se zyada ho jaye, to user ko group se nikal diya jayega. 'warn reset' ka use kisi user ki warnings clear karne ke liye karein._",
       "reset_usage": "*Misaal:* _warn reset @user (ya user ke message par reply karke 'warn reset' likhein)._",
-      "cannot_remove_admin": "_Main kisi admin ko remove nahi kar sakta._"
+      "cannot_remove_admin": "_Main kisi admin ko remove nahi kar sakta._",
+      "kick_default": "{0} ko warn limit se barhne par kick kar diya gaya hai.",
+      "warn_default": "⚠️ Warning {0}! {1}/{2} warnings baqi hain."
     },
     "wcg": {
-      "usage": "*Misaal:* \n- wcg start (force start the word chain game)\n- wcg end (end the current game)\n- wcg <word> (play by continuing the word chain)",
-      "desc": "*_Word Chain Game: Ek word provide karein jo chain continue kare. 'wcg start' ka use naye game ko force start karne ke liye karein ya 'wcg end' ka use game stop karne ke liye._*"
+      "usage": "*Misaal:* \n- wcg start (force start the word chain game)\n- wcg end (end the current game)\nDefault mode easy hai.",
+      "desc": "Word Chain Game: continue the word chain by submitting a word. use 'wcg start' to force start and 'wcg end' to stop.",
+      "game_ends": "Game Khatm!",
+      "already_used": "_Ye word pehle use ho gaya hai!_",
+      "not_starting_with": "_{0} se shuru nahi ho raha_ {1}",
+      "length_limit": "_Is word ki length {0} se kam hai_",
+      "not_in_list": "_Ye word meri list mein nahi hai_",
+      "turn_info": "🎲Baari : @{0}\n🙌Agla : @{1}\n🆎{2} se shuru hone wala word bolen (kam se kam {3} letters)\n🏆Players baki hain : {4}/{5}\n⏳ Jawab dene ke liye aapke paas *{6}* seconds hain\n📝Total words : {7}",
+      "timeout": "Time khatm @{0}! Aap game se bahar hain! 🚫",
+      "winner": "@{0} game jeet gaya 🏆\nWords : *{1}*\nSabse lamba word : *{2} ({3})* by @{4} 📚\nTime : *{5}* ⏱️",
+      "joined": "@{0} shamil ho gaya 👏",
+      "starting": "🎮 Game shuru ho rahi hai...\n👥 2 ya usse zyada players ki zaroorat hai\n⏳ Shamil hone ke liye 60 seconds hain ⏳\n🧩 Mode {0}",
+      "starts_in": "🎮 Game {0} seconds mein shuru ho jayegi ⏳\nKhelne ke liye *join* likhen 🙋‍♂️🙋‍♀️\n🧩 Mode {1}{2}",
+      "players_count": "\n\n👥 {0} کھلاڑی شامل ہو گئے۔",
+      "terminated": "_شروع کرنے کے لیے کافی کھلاڑی نہیں ہیں۔ گیم ختم کر دی گئی۔_",
+      "mode_update": "_WCG موڈ {0} پر اپ ڈیٹ کر دیا گیا ہے_"
     },
     "wrg": {
-      "usage": "Misaal:\n- wrg start (Random Word Game ko force start karein)\n- wrg end (Current game ko end karein)\n- wrg <word> (Random prompt ka jawab ek word se dein)",
-      "desc": "_Random Word Game: Aik game jisme aap ek random prompt ka jawab ek word se dete hain. 'wrg start' ka use naye game ko shuru karne ke liye karein ya 'wrg end' ka use game khatam karne ke liye._"
+      "usage": "Misaal:\n- wrg start (Random Word Game ko force start karein)\n- wrg hard (Hard mode mein shuru karein)\n- wrg easy (Easy mode mein shuru karein)\n- wrg end (Current game ko end karein)",
+      "desc": "Random Word Game: Random prompt ke response mein word submit karke khelo. 'wrg start' use karke naya game shuru karo ya 'wrg end' use karke current game khatam karo."
     },
     "yts": {
       "usage": "*Misaal:* yts khaab",
-      "desc": "*_YouTube videos ko query ya URL ke zariye search karein. Agar ek valid YouTube URL provide kiya gaya hai, to pehli video ki tafseelat dikhai jayengi_*"
+      "desc": "*_YouTube videos ko query ya URL ke zariye search karein. Agar ek valid YouTube URL provide kiya gaya hai, to pehli video ki tafseelat dikhai jayengi_*",
+      "title": "*Title :* ",
+      "time": "*Time :* ",
+      "views": "*Views :* ",
+      "publish": "*Publish :* ",
+      "desc_label": "*Desc :* ",
+      "author": "*Channel :* ",
+      "url": "*Url :* "
     },
     "song": {
       "usage": "*Example:* _song see you again YA song <YouTube URL> (reply ka option bhi available hai)._",
       "desc": "*_YouTube se song download karein. Agar URL diya gaya ho, to song seedha download hoga; agar sirf query ho, to ek list generate hogi jisse aap select kar sakte hain._*",
-      "not_found": "*_Diye gaye query ya URL ke liye koi song nahi mila._*"
+      "not_found": "*_Diye gaye query ya URL ke liye koi song nahi mila._*",
+      "no_result": "_Koi result nahi mila_ *{0}*",
+      "id_label": "🆔&id\n",
+      "list_header": "{0} search karke {1} results mile\nSong download karne ke liye 🆔 bhejein.\n"
     },
     "video": {
       "usage": "*Example:* _video <YouTube URL> (ya kisi message par reply karein jo URL contain karta ho)._",
       "desc": "_YouTube se video download karein. Agar direct URL diya gaya ho, to video download hoga; agar query di gayi ho, to ek list generate hogi jisse aap select kar sakte hain._",
-      "not_found": "_Diye gaye query ya URL ke liye koi video nahi mila._"
+      "not_found": "_Diye gaye query ya URL ke liye koi video nahi mila._",
+      "list_header": "{0} search kiya\n{1} results mile"
     },
     "update": {
       "usage": "*Example:* _update_",
@@ -745,7 +885,190 @@
       "action": "Action updated: group mentions ab *{0}* ka sabab banenge.",
       "filter": "Group mention protection ke liye ignore JIDs update kar diye gaye hain.",
       "enabled": "Group mention protection enable kar diya gaya hai.",
-      "disabled": "Group mention protection disable kar diya gaya hai."
+      "disabled": "Group mention protection disable kar diya gaya hai.",
+      "desc": "Anti group mention settings manage karein 🛡️",
+      "ignore_prompt": "*Boss, ignore karne ke liye ek JID dein.* 🕵️‍♂️"
+    },
+    "reminder": {
+      "desc": "Google Calendar reminders ko manage karein.",
+      "usage": "> *Reminders ka Istimal:*\n- `reminder <text>` - Naya reminder set karein (maslan: 'meeting kal 10 baje')\n- `reminder list` - Tamam reminders ki list dekhein\n- `reminder del <id>` - Reminder delete karein",
+      "success": "*Reminder Added!*\n\n*Event:* {0}\n*Time:* {1}\n*Link:* {2}",
+      "list": "*Aapke Reminders:*\n\n{0}",
+      "list_empty": "Koi reminder nahi mila.",
+      "deleted": "ریمنڈر کامیابی سے حذف کر دیا گیا!",
+      "invalid_id": "Baraye meharbani aik valid event ID fraham karein.",
+      "auth_required": "*Authentication Zaroori Hai:*\n\nBot authorize karne ke liye \"gauth\" istimal karein.",
+      "time": "Waqt",
+      "id": "ID",
+      "short_id_info": "\n\n*نوٹ:* ڈیلیٹ کمانڈ کے لیے آپ کو آئی ڈی کے صرف پہلے 2-4 حروف درج کرنے کی ضرورت ہے۔"
+    },
+    "gauth": {
+      "desc": "Google API کی تصدیق کا نظم کریں (جیسے YouTube کی عمر کی پابندی، Google Drive، کیلنڈر، اور ٹاسکس)۔",
+      "usage": "*Google Auth کمانڈز:*\n\n- `.gauth auth` — تصدیق کا عمل شروع کریں۔\n- `.gauth code <url_or_code>` — تصدیقی کوڈ کی توثیق کریں۔\n- `.gauth import` — `credentials.json` امپورٹ کریں (فائل کو جواب دیں)۔\n- `.gauth status` — موجودہ تصدیقی حیثیت چیک کریں۔\n- `.gauth logout` — اس سیشن کے لیے اسناد اور ٹوکن صاف کریں۔\n\n*نوٹ:* عام YouTube فیچرز کے لیے Google Auth اختیاری ہے لیکن عمر کی پابندی والی ویڈیوز اور Google Drive/کیلنڈر/ٹاسکس کے لیے ضروری ہے۔",
+      "prompt": "*Google Authentication Setup Guide:*\n\n1. *Project Banayein:* https://console.cloud.google.com/ par jayein, \"Select a project\" > \"New Project\" par click karein, naam \"Levanter\" rakhein aur \"Create\" karein.\n2. *APIs Enable Karein:* \"APIs & Services\" > \"Library\" par jayein. \"Google Drive API\", \"Google Calendar API\" aur \"Google Tasks API\" search karke enable karein.\n3. *OAuth Consent:* \"APIs & Services\" > \"OAuth consent screen\" par jayein. \"External\" chunein, zaroori fields bharein, aur \"Audience\" section mein \"Test users\" mein apna email add karein (ZAROORI).\n4. *Credentials:* \"APIs & Services\" > \"Credentials\" par jayein. \"Create Credentials\" > \"OAuth client ID\" par click karein. \"Desktop app\" chunein, naam dein, aur \"Create\" karein.\n5. *Download:* Apne naye Client ID ke paas Download (JSON) icon par click karein. Isse save karein aur file ko reply karke `.gauth import` ka istemal karein.\n6. *Authorize:* Ab authorize karne ke liye neeche diye gaye link par click karein:\n{0}\n\n7. *Complete:* Login karein, \"Unverified app\" warning accept karein (\"Advanced\" > \"Go to Levanter\" par click karke), redirect ke baad address bar se pura URL copy karein, aur bhejein:\n`.gauth code <copied_url>`",
+      "success": "Authentication kamyab rahi!",
+      "import_success": "`credentials.json` kamyabi se import ho gaya! Ab authorize karne ke liye `.gauth auth` istimal karein.",
+      "import_reply": "Baraye meharbani `credentials.json` file ko reply karein.",
+      "status_auth": "*Status:* Session ke liye authenticated hai.",
+      "status_not_auth": "*Status:* Session ke liye authenticated nahi hai. `.gauth auth` istimal karein.",
+      "logout": "Session ke liye Google Auth data clear aur logout kar diya gaya.",
+      "failed": "*Nakam:* {0}"
+    },
+    "gdrive": {
+      "desc": "Google Drive operations (upload, list, delete).",
+      "upload_success": "Upload mukammal ho gaya!",
+      "uploading": "Media Drive par upload ho raha hai...",
+      "not_authorized": "Authorized nahi hai. \"backup auth\" istimal karein.",
+      "list": "*Google Drive Files:*\n\n{0}",
+      "list_empty": "Levanter folder me koi file nahi mili.",
+      "deleted": "فائل کامیابی سے حذف کر دی گئی!",
+      "invalid_id": "Baraye meharbani aik valid file ID fraham karein.",
+      "error": "*Ghalti:* {0}",
+      "url_prompt": "Baraye meharbani aik valid URL fraham karein, media message tag karein, ya subcommands istemal karein: list, del <id>, dl <id>.\nMisal: `gupload list`",
+      "short_id_info": "\n\n*نوٹ:* ڈاؤن لوڈ یا ڈیلیٹ کمانڈز کے لیے آپ کو آئی ڈی کے صرف پہلے 2-4 حروف درج کرنے کی ضرورت ہے۔"
+    },
+    "task": {
+      "desc": "اپنے گوگل ٹاسکس کا انتظام کریں",
+      "usage": "استعمال: task <list | lists | switch <نام> | add <متن> | دئے گئے <آئی ڈی> | done <آئی ڈی> | update <آئی ڈی> <متن> | <متن>>",
+      "added": "ٹاسک شامل کر دیا گیا: *{0}*\nتاریخ: {1}",
+      "deleted": "ٹاسک حذف کر دیا گیا۔",
+      "updated": "ٹاسک *{0}* کو *{1}* قرار دیا گیا ہے",
+      "list_empty": "کوئی ٹاسک نہیں ملا۔",
+      "list_header": "📝 *ٹاسکس ({0})*:\n",
+      "not_found": "ٹاسک نہیں ملا۔",
+      "auth_required": "براہ کرم *.gauth auth* استعمال کر کے تصدیق کریں اور گوگل ٹاسک کی اجازتیں فعال کریں۔",
+      "list_lists": "📝 *ٹاسک لسٹس*:\n",
+      "switched": "ڈیفالٹ ٹاسک لسٹ *{0}* پر تبدیل کر دی گئی۔"
+    },
+    "antiedit": {
+      "desc": "Anti-edit: edit kiye gaye messages track karke unki history dikhata hai",
+      "example": "> *Usage Examples:*\n- antiedit g - Send edit history in same chat\n- antiedit p - Send edit history to sudo\n- antiedit g pm - Same chat, PMs only\n- antiedit g gm - Same chat, groups only\n- antiedit p no-gm - To sudo, exclude groups\n- antiedit p no-pm - To sudo, exclude PMs\n- antiedit <jid> - Send to specific JID\n- antiedit off - Disable\n\n*Scopes:* pm, gm, no-pm, no-gm",
+      "invalid_jid": "*Error:* _Invalid JID_",
+      "edit_msg_disable": "Anti-edit disable kar diya gaya hai.",
+      "edit_dest_jid": "_Edit history yahan bheji jaegi: {0}_",
+      "edit_dest_sudo": "_Edit history aapke chat ya sudo par bheji jaegi._",
+      "edit_dest_chat": "_Edit history isi chat mein bheji jaegi._",
+      "edit_scope_pm": "📌 _Only for personal chats_",
+      "edit_scope_gm": "📌 _Only for group chats_",
+      "edit_scope_no_pm": "📌 _Excluding personal chats_",
+      "edit_scope_no_gm": "📌 _Excluding group chats_"
+    },
+    "screenshot": {
+      "usage": "Example: screenshot levanter.site",
+      "desc": "Kisi bhi website ka screenshot lein! 📸"
+    },
+    "lyrics": {
+      "usage": "Example: lyrics heat waves",
+      "desc": "Apne favorite gaano ke lyrics dhundein! 🎤",
+      "not_found": "Wo lyrics nahi mile. Spelling galat hai? 🧐"
+    },
+    "google": {
+      "usage": "Example: google how to make coffee",
+      "desc": "Google par kuch bhi search karein! 🌐"
+    },
+    "lofi": {
+      "desc": "Tidal se lofi audio download karein",
+      "usage": "_Ek song ka naam dein_",
+      "no_result": "_Koi result nahi mila_ *{0}*",
+      "error_download": "_Lofi audio download error: {0}_",
+      "error_search": "_Lofi search error: {0}_",
+      "list_header": "{0} search karke {1} results mile\nLofi download karne ke liye 🆔 bhejein.\n"
+    },
+    "spotify": {
+      "desc": "Apne favourite tracks ya playlists download karein 🎧",
+      "example": "*Example :* spotify <url>",
+      "downloading": "_Aapke liye {0} tracks download kar raha hoon! Vibe ke liye taiyar ho jao!_ 🎧🎶"
+    },
+    "audio": {
+      "desc": "audio mod",
+      "reply_to_audio": "*Ek audio message ka reply karein*"
+    },
+    "img": {
+      "desc": "Pinterest image search",
+      "example": "*Example :  img cats*\n*img 10 cats*",
+      "no_result": "_{0} ke liye koi Pinterest image nahi mili_",
+      "downloading": "_{1} ki {0} Pinterest images download kar raha hoon_"
+    },
+    "react": {
+      "desc": "Message par react karein",
+      "example": "_Example : react ❣_",
+      "channel_desc": "Channel par react karein",
+      "channel_example": "_Example : creact https://whatsapp.com/channel/xxx/xxx, ❣_",
+      "info_desc": "Channel info dekhein",
+      "info_example": "_Example : cinfo https://whatsapp.com/channel/xxx",
+      "invalid_url": "_Invalid channel URL_",
+      "metadata_failed": "_Channel metadata fetch nahi ho saki_",
+      "name": "*Name :* ",
+      "jid": "*Jid :* ",
+      "subscribers": "*Subscribers :* ",
+      "verification": "*Verification :* ",
+      "creation": "*Banaya gaya :* ",
+      "description": "*Description :* "
+    },
+    "budget": {
+      "income_desc": "income set karne ke liye",
+      "income_example": "*Type missing*\n*Example : income type,amount,remark*\n*income salary, 500*\n\n*remark optional hai*",
+      "income_success": "*Is mahine ka income {0} hai*",
+      "expense_desc": "expense set karne ke liye",
+      "expense_example": "*Type missing*\n*Example : expense type,amount,remark*\n*expense movie, 200, movie_name*\n\n*remark optional hai*",
+      "expense_success": "*Is mahine ka expense {0} hai*",
+      "del_desc": "income | expense delete karne ke liye",
+      "del_example": "*Example : delbudget id*\n\n*ID summary se*\n*Amount update karne ke liye delete na karein, dobara enter karein*",
+      "del_not_found": "_{0} list mein nahi hai._",
+      "del_success": "_{0} list se hata diya gaya._",
+      "summary_desc": "Budget summary lene ke liye",
+      "summary_example": "*Example : summary 1 May 2023, 3 May 2023*"
+    },
+    "exif": {
+      "desc": "Sticker se Exif metadata nikalein",
+      "reply_to_sticker": "*Sticker ka reply karein.*",
+      "failed": "*Sticker download nahi ho saka.*",
+      "not_found": "*Is sticker mein koi Exif metadata nahi hai.*",
+      "pack_id": "*Pack ID:* ",
+      "pack_name": "*Pack Name:* ",
+      "author": "*Author:* ",
+      "emojis": "*Emojis:* "
+    },
+    "bing": {
+      "desc": "bing ai",
+      "example": "*Example : bing Hi*",
+      "dale_desc": "bing image creator",
+      "dale_cookie_prompt": "Bing cookie set karein, https://bing.com/images/create par login karein, bing Image Creator ek baar use karein, phir cookie copy karein.",
+      "dale_example": "*Example :* dale Create a 3D illusion for a WhatsApp profile picture where a boy in a white shirt sits casually on a royal Sofa. Wearing White sneakers,a black T-shirt, and sunglasses, he looks ahead. The background features \"Arjun \" in big and capital Yellow fonts on the black wall."
+    },
+    "backup": {
+      "desc": "Backup operations manage karein: authenticate, validate, ya backup karein.",
+      "usage": "*Backup Command Usage:*\n\n- .gauth auth — Google Drive access ke liye apna account authenticate karein.\n- backup now — Abhi backup karein.",
+      "success": "Backup successfully complete ho gaya!",
+      "auth_prompt": "Authentication shuru karne ke liye `.gauth auth` use karein.",
+      "code_prompt": "Apna code validate karne ke liye `.gauth code <url_or_code>` use karein.",
+      "downloading": "_File download ho rahi hai..._"
+    },
+    "poll": {
+      "desc": "Multiple options ke saath ek poll banaein.",
+      "example": "*Example : question,option1,option2,...*"
+    },
+    "cmd": {
+      "desc_set": "cmd set karne ke liye",
+      "desc_get": "cmd get karne ke liye",
+      "desc_del": "cmd delete karne ke liye",
+      "reply_to_sticker": "*Sticker ka reply karein*",
+      "example_set": "*Example : setcmd ping*",
+      "not_set": "*Koi cmd set nahi hai*",
+      "example_del": "*Example :*\ndelcmd cmdName\nSticker ka reply karein",
+      "success": "_Success_",
+      "failed": "_Failed_"
+    },
+    "heroku": {
+      "restart_desc": "Dyno restart karein",
+      "restart_msg": "_Restart ho raha hai..._",
+      "shutdown_desc": "Dyno band karein",
+      "shutdown_msg": "_Band ho raha hai..._",
+      "quota_desc": "Quota info dikhayein",
+      "quota_total": "Total Quota :",
+      "quota_used": "Used Quota :",
+      "remaining": "Remaining :",
+      "error_prefix": "HEROKU : {0}"
     }
   }
 }
